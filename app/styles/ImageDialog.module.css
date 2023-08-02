@@ -1,0 +1,167 @@
+.dialogbox {
+  width: 100%;
+  /* max-height: 500px; */
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.dialogbox h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gray800);
+}
+
+.header {
+  padding: 20px 24px;
+  background: var(--gray100);
+}
+
+.body {
+  flex: 1;
+  width: 100%;
+  height: 30vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.photo {
+  flex: 3;
+  background: var(--gray900);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tags {
+  padding: 0 30px 30px 30px;
+}
+
+.box {
+  margin-bottom: 20px;
+}
+
+.box h2 {
+  font-size: 16px;
+  color: var(--gray800);
+  margin-bottom: 12px;
+}
+
+.sizes {
+  display: none;
+  border: 1px solid #dee8f4;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.downloadBtn {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px;
+  text-align: center;
+  background: #4bc34b;
+  color: #fff;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+.downloadBtn:hover {
+  background: #4bb64b;
+}
+
+.likeButton {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  background: #f43f5e;
+  color: #fff1f2;
+  text-align: center;
+}
+.likeButton:hover {
+  background: #e11d48;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.info span {
+  font-size: 14px;
+  color: var(--gray600);
+}
+.info p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray800);
+}
+
+.tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0px 24px 20px 24px;
+  background: #fff;
+}
+
+.tags h3 {
+  font-size: 15px;
+  color: var(--gray800);
+  margin-right: 0px;
+}
+
+.tag {
+  padding: 6px 16px;
+  font-size: 14px;
+  color: var(--gray400);
+  border: 1px solid var(--gray400);
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.tag:hover {
+  color: var(--gray700);
+  border: 1px solid var(--gray700);
+}
+
+/* Media Query */
+@media (min-width: 768px) {
+  .body {
+    flex-direction: row;
+  }
+  .dialogbox {
+    width: 994px;
+    max-height: 640px;
+  }
+  .sizes {
+    display: block;
+  }
+}

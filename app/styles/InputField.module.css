@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray600);
+  text-transform: capitalize;
+  margin-bottom: 6px;
+}
+.field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  position: absolute;
+  padding: 0 12px 0 14px;
+  color: var(--gray400);
+  border-right: 1px solid var(--gray300);
+}
+.icon i {
+  font-size: 16px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 20px 12px 54px;
+  border-radius: 4px;
+  color: var(--gray600);
+  border: 1px solid var(--gray300);
+  outline: none;
+}

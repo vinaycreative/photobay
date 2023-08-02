@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  background: #f4f4f5;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 24px 0;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    flex-wrap: nowrap;
+  }
+}
+
+.suggestion {
+  padding: 8px 20px;
+  font-size: 16px;
+  color: #71717a;
+  border: 1px solid #d4d4d8;
+  border-radius: 4px;
+}
+
+.skeleton {
+  width: 100px;
+  height: 38px;
+  background: var(--gray200);
+  border-radius: 4px;
+}

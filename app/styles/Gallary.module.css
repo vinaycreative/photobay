@@ -1,0 +1,55 @@
+.gallary {
+  width: 100%;
+  min-height: 60vh;
+  background: #fff;
+}
+
+.wrapper {
+  padding: 48px 0;
+}
+
+.loadcontainer {
+  margin-top: 24px;
+  position: relative;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+
+.column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.column > div {
+  margin-bottom: 30px;
+}
+
+.button {
+  position: relative;
+  font-size: 16px;
+  font-family: "Inter";
+  padding: 14px 20px;
+  color: #52525b;
+  background: #fff;
+  border: 1px solid #e4e4e7;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #fff;
+  background: #2563eb;
+  border: 1px solid #60a5fa;
+}

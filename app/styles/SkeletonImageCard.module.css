@@ -1,0 +1,29 @@
+.card {
+  min-width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.photo {
+  border-radius: 6px;
+  min-height: 240px;
+  background: var(--gray100);
+  overflow: hidden;
+}
+
+.tags {
+  width: 100%;
+  padding: 6px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  overflow-x: hidden;
+}
+
+.tag {
+  width: 60px;
+  height: 14px;
+  display: block;
+  background: var(--gray100);
+  border-radius: 4px;
+}
