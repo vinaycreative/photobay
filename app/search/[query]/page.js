@@ -6,10 +6,7 @@ import Suggestion from "@/app/components/Suggestion"
 import Gallary from "@/app/components/Gallary"
 import Modal from "@/app/components/Modal"
 
-export const metadata = {
-  title: "Search Results | PhotoBay ",
-  description: "Search Results | PhotoBay",
-}
+
 
 const page = ({ params }) => {
   const [currentPage, setCurrentPage] = useState(1)
