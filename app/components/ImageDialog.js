@@ -41,13 +41,7 @@ const ImageDialog = ({ data, isOpen, onClose }) => {
                   >
                     Download free!
                   </Link>
-                  <Link
-                    href={data.largeImageURL}
-                    download={`photo+${data.id}`}
-                    className={styles.likeButton}
-                  >
-                    Like
-                  </Link>
+                  <button className={styles.likeButton}>Like</button>
                 </div>
                 <div className={styles.box}>
                   <h2>Information</h2>

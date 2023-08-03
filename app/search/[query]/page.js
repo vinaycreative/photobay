@@ -1,6 +1,5 @@
 "use client"
 import { useEffect, useState } from "react"
-import Head from "next/head"
 import axios from "axios"
 import SearchBox from "@/app/components/SearchBox"
 import Suggestion from "@/app/components/Suggestion"
@@ -60,7 +59,11 @@ const page = ({ params }) => {
   return (
     <main>
       <Modal />
-      <SearchBox small query={params.query} backdropUrl={result[18]?.largeImageURL} />
+      <SearchBox
+        small
+        query={params.query}
+        backdropUrl={result[result.length - 1]?.largeImageURL}
+      />
       <Suggestion synonyms={synonyms} />
       <Gallary data={result} loadMore={loadMoreResults} isLoading={isLoading} />
     </main>

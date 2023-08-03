@@ -95,6 +95,8 @@
   background: #f43f5e;
   color: #fff1f2;
   text-align: center;
+  border: none;
+  cursor: pointer;
 }
 .likeButton:hover {
   background: #e11d48;
